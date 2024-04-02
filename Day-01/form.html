@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            Form in HTML
+        </h2>
+        <form method="get">
+            <label>Name:</label><br>
+            <input type="text" name="username" placeholder="Name" autocomplete="off"/><br>
+            <label>Age:</label><br>
+            <input type="number" name="Age" placeholder="Age"/><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="password" required/><br>
+            <label>Email:</label><br>
+            <input type="email" name="Email"placeholder="Email" required/><br><br>
+            <input type="submit" value="submit the form"/><br><br>
+            <!-- <button>Submit</button><br><br> -->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id ="cricket" name="hobbies" /><label for="cricket"> Cricket</label><br><br>
+            <input type="checkbox" id ="Drawing" name="hobbies" /><label for="Drawing"> Drawing</label><br><br>
+            <input type="checkbox" id ="Web Development" name="hobbies" /><label for="Web Development"> Web Development</label><br><br>
+            <label>Gender:</label><br><br>
+            <input type="radio" name="gender" id="male" value="Male"/><label for="male">Male</label><br><br>
+            <input type="radio" name="gender" id="female" value="female"/><label for="female">Female</label><br><br>
+            <input type="textarea" placeholder="Please provide the details"/><br><br>
+            <label for="city">City</label><br>
+            <select id="city" name="city">
+                <option>Ghaziabad</option>
+                <option selected>Lucknow</option>
+                <option>Sitapur</option>
+            </select><br><br>
+            <input type="reset"/>
+        </form>
+    </body>
+</html>
