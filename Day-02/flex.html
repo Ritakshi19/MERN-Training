@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Flex in HTML
+        </title>
+        <style>
+            h2{
+                text-align: center;
+            }
+            .flex{
+    background-color: aqua;
+    display:flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
+    margin:20px 0px;   
+ }
+ .child1{
+    border: 1px solid red;
+}
+.parent1
+{
+    justify-content: space-around;
+}
+.parent2{
+    justify-content: space-between;
+}
+.parent3
+{
+    justify-content: space-evenly;
+}
+.parent4
+{
+    justify-content: flex-end;
+}
+.child
+{
+    background-color: rgb(43, 189, 226);
+    border:1px solid black;
+    flex-basis:100px;
+    flex-shrink: 0;
+}
+.search-box{
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+.cart{
+    flex-grow: 1;
+}
+
+        </style>
+    </head>
+    <body>
+        <h2>Flex in HTML</h2>
+        <h3>Space-around</h3>
+     <div class="flex parent1">
+        <div class="child1">logo</div>
+        <div class="child1">loc</div>
+        <div class="child1">...</div>
+        <div class="child1 ">cart</div>
+    </div>
+    <h3>Space-between</h3>
+    <div class="flex parent2">
+            <div class="child1">logo</div>
+            <div class="child1">loc</div>
+            <div class="child1">...</div>
+            <div class="child1 ">cart</div>
+        </div>
+        <h3>Space-evenly</h3>
+            <div class="flex parent3">
+                <div class="child1">logo</div>
+                <div class="child1">loc</div>
+                <div class="child1">...</div>
+                <div class="child1 ">cart</div>
+            </div>
+            <h3>Flex-end</h3>
+            <div class="flex parent4">
+                <div class="child1">logo</div>
+                <div class="child1">loc</div>
+                <div class="child1">...</div>
+                <div class="child1 ">cart</div>
+            </div>
+            
+     <div class="flex">
+        <div class="child">logo</div>
+        <div class="child">loc</div>
+        <div class="child search-box">...</div>
+        <div class="child cart">cart</div>
+        <div class="child">logo</div>
+        <div class="child">loc</div>
+        <div class="child search-box">...</div>
+        <div class="child cart">cart</div>
+     </div>
+    </body>
+</html>
