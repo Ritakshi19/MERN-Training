@@ -1,0 +1,30 @@
+.parent{
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    padding: 10px;
+    transition-property:height width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+h2{
+    height: 75px;
+    background-color: aquamarine;
+}
+@media(800px <= width <= 1200px){
+    .parent{
+        background-color: blueviolet;
+    }
+    h2{
+        background-color: blueviolet;
+    }
+   
+}
+@media(800px <= width <= 1200px){
+    .parent{
+        height: 200px;
+        width: 200px;
+    }
+}
